@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
+        
+        .wrapper {
+            width: 960px;
+            border: 1px solid black;
+        }
+        
+        header {
+            width: 100%;
+            height: 105px;
+            background-color: #294e79;
+            position: relative;
+        }
+        
+        .logo {
+            position: absolute;
+        }
+        
+        .logo-text {
+            width: 450px;
+            top: 30px;
+            left: 100px;
+            position: absolute;
+        }
+        
+        .logo .p1,
+        .p2 {
+            color: white;
+        }
+        
+        .p1 {
+            font-size: 30px;
+        }
+        
+        .search {
+            display: flex;
+            float: right;
+        }
+        
+        .search input {
+            background-color: rgb(0, 21, 95);
+            border: 1px solid rgb(57, 125, 202);
+            margin: 10px;
+            color: white;
+            padding: 5px;
+        }
+        
+        nav {
+            position: absolute;
+            right: 0px;
+            bottom: 1px;
+        }
+        
+        nav ul {
+            display: flex;
+        }
+        
+        nav li {
+            background-color: rgb(57, 125, 202);
+            list-style: none;
+            padding: 15px;
+            margin-right: 10px;
+        }
+        
+        nav li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .content {
+            margin-top: 50px;
+            display: flex;
+        }
+        
+        aside {
+            margin-left: 5px;
+            width: 60%;
+        }
+        
+        section {
+            margin-left: 20px;
+            width: 30%;
+            margin-right: 10px;
+            background-color: lavender;
+            height: 50%;
+            padding: 30px;
+        }
+        
+        aside .p4 {
+            color: red;
+            text-shadow: 2px 5px 5px green;
+        }
+        
+        .frm-profile {
+            display: flex;
+            margin-top: 10px;
+        }
+        
+        .frm {
+            width: 60%;
+            display: inline-block;
+        }
+        
+        .frm input {
+            width: 90%;
+            background-color: lavender;
+        }
+        
+        .frm span {
+            width: 45%;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        
+        .frm textarea {
+            width: 300px;
+            height: 70px;
+            background-color: lavender;
+        }
+        
+        .frm button {
+            margin-top: 15px;
+            padding: 5px;
+        }
+        
+        .info {
+            margin-left: 5px;
+        }
+        
+        section img {
+            width: 300px;
+            border: 1px solid white;
+        }
+        
+        .p3 {
+            font-size: 25px;
+        }
+        
+        hr {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-top: 1px dashed black;
+            width: 100%;
+            margin: 10px 0;
+        }
+        
+        footer {
+            margin-top: 50px;
+            background-color: darkslateblue;
+            padding: 10px;
+        }
+        
+        footer .p5 {
+            color: white;
+        }
+        
+        footer .p6 {
+            color: rgb(125, 143, 236);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <img src="../images/logo.png" alt="" height="105px">
+                <div class="logo-text">
+                    <p class="p1">FlowerBox 360</p>
+                    <p class="p2">...to get your daily dose of luxury roses!</p>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search the site..." style="width: 200px;">
+                <input type="submit" value="GO">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Promotion</a></li>
+                    <li><a href="">Gift Baskets</a></li>
+                    <li><a href="">Flower Services</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <aside>
+                <p class="p3">Why Not contact Us Today!</p>
+                <hr>
+                <div class="frm-profile">
+                    <form action=" " method="post " class="frm">
+                        <p class="p4">
+                            <i>
+                                For FlowerBox 360 shoppers, that means not only can you send your friends and loved ones the highest quality flowers found on online, but that you can do so at a great value.
+                            </i>
+                        </p>
+                        <span class="name">
+                            <label for="frmName ">Name:</label>
+                            <input type="text " name="name " id="frmName ">
+                        </span>
+                        <span class="email">
+                            <label for="frmEmail ">Email:</label>
+                            <input type="text " name="email " id="frmEmail ">
+                        </span>
+                        <span class="telephone">
+                            <label for="frmTelephone ">Telephone:</label>
+                            <input type="text " name="telephone " id="frmTelephone ">
+                        </span>
+                        <span class="subject">
+                            <label for="frmSubject ">Subject:</label>
+                            <input type="text " name="subject " id="frmSubject ">
+                        </span>
+                        <span class="message ">
+                            <label for="txtMessage ">Message:</label>
+                            <textarea name="message " id="txtMessage " cols="30 " rows="10 "></textarea>
+                        </span>
+                        <div class="btn ">
+                            <button>Submit</button>
+                            <button type="reset ">Reset</button>
+                        </div>
+                    </form>
+                    <div class="info ">
+                        <p class="p3">FlowerBox 360 Info!</p3>
+                            <hr>
+                            <p>
+                                Operating Hours:<br> Monday-Friday: 9:00ap-5.00pm.<br> Saturday: 9.00am-1.00pm. <br> Sunday: Closed (No Deliveries) <br> ORDER ONLINE 24/7
+                                <br><br><br> Software Engineering Dept. <br> Information Technology Falcuty <br> First Floor, H Building
+                                <br><br> 12 Nguyen Van Bao St, Ward 4 <br> Go Vap District <br> Ho Chi Minh city <br> Tel: 02838940 390 <br> Fax: 283.9940.954
+                            </p>
+                    </div>
+                </div>
+            </aside>
+            <section>
+                <p class="p3 ">Discounts & Specials</p>
+                <hr>
+                <img src="../images/flower .png " alt=" ">
+                <p>FlowerBoxx 360 offers many great discounts throughout the year, from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderful troops!
+                </p>
+                <a href=" " style="float: right; text-decoration: none; font-weight: bold; margin-top: 10px; color: darkblue;"> Read More>></a>
+            </section>
+        </div>
+        <footer>
+            <span class="p5 ">Copyright 2017 - All Rights Reserved</span>
+            <span class="p6 ">Software Engineering Department- Industrial Univercity of Ho Chi Minh City</span>
+        </footer>
+    </div>
+</body>
+
+</html>
